@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.02c6ee3b.chunk.css",
+    "main.js": "/static/js/main.1a2fd6c0.chunk.js",
+    "main.js.map": "/static/js/main.1a2fd6c0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3ba55348.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3ba55348.js.map",
+    "static/css/2.cc77c331.chunk.css": "/static/css/2.cc77c331.chunk.css",
+    "static/js/2.541fb400.chunk.js": "/static/js/2.541fb400.chunk.js",
+    "static/js/2.541fb400.chunk.js.map": "/static/js/2.541fb400.chunk.js.map",
+    "static/js/3.c257a080.chunk.js": "/static/js/3.c257a080.chunk.js",
+    "static/js/3.c257a080.chunk.js.map": "/static/js/3.c257a080.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.cc77c331.chunk.css.map": "/static/css/2.cc77c331.chunk.css.map",
+    "static/css/main.02c6ee3b.chunk.css.map": "/static/css/main.02c6ee3b.chunk.css.map",
+    "static/js/2.541fb400.chunk.js.LICENSE.txt": "/static/js/2.541fb400.chunk.js.LICENSE.txt",
+    "static/media/000.76fdc399.jpg": "/static/media/000.76fdc399.jpg",
+    "static/media/Octocat.b45482fc.png": "/static/media/Octocat.b45482fc.png",
+    "static/media/concrete.5e250e3a.webp": "/static/media/concrete.5e250e3a.webp",
+    "static/media/profileimage.99087a01.jpg": "/static/media/profileimage.99087a01.jpg",
+    "static/media/re_amot1.jpg": "/static/media/re_amot1.468cf7c7.jpg",
+    "static/media/re_amot2.jpg": "/static/media/re_amot2.5e8cdffc.jpg",
+    "static/media/re_boats.jpg": "/static/media/re_boats.e65ae4fd.jpg",
+    "static/media/re_flowers.jpg": "/static/media/re_flowers.ab8e8a74.jpg",
+    "static/media/re_spikey.jpg": "/static/media/re_spikey.601d98c6.jpg",
+    "static/media/re_train.jpg": "/static/media/re_train.dcce9305.jpg",
+    "static/media/re_winter.jpg": "/static/media/re_winter.c3d08761.jpg",
+    "static/media/re_winter2.jpg": "/static/media/re_winter2.601d98c6.jpg",
+    "static/media/re_winter3.jpg": "/static/media/re_winter3.dcce9305.jpg",
+    "static/media/re_winter4.jpg": "/static/media/re_winter4.681c3267.jpg",
+    "static/media/sidebar.css": "/static/media/sidebar.2808b3f1.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3ba55348.js",
+    "static/css/2.cc77c331.chunk.css",
+    "static/js/2.541fb400.chunk.js",
+    "static/css/main.02c6ee3b.chunk.css",
+    "static/js/main.1a2fd6c0.chunk.js"
+  ]
+}
