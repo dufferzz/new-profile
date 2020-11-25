@@ -1,4 +1,3 @@
-
 .image-box {
     box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.5);
     background: var(--image-url) center center;
@@ -13,31 +12,30 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    transition: box-shadow .3s ease-out;
-    padding-bottom:2rem;
-
+    transition: box-shadow 0.3s ease-out;
+    padding-bottom: 2rem;
 }
 
 @media screen and (min-width: 700px) {
     .somepadding {
-    padding:1rem;
+        padding: 1rem;
     }
 }
 
-.imageBackground{
+.imageBackground {
     width: 100%;
 }
-.somepadding{
-    padding:1rem;
+.somepadding {
+    padding: 1rem;
 }
 
 .image-box:hover {
-    transition: box-shadow .3s ease-in;
+    transition: box-shadow 0.3s ease-in;
 
     box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.2);
 }
 .isvisible {
-    transition: box-shadow .3s ease-in;
+    transition: box-shadow 0.3s ease-in;
     box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.2);
 }
 .shadow {
@@ -45,30 +43,35 @@
     box-shadow: none;
 }
 
-.buttons{
+.buttons {
     border-radius: 10px;
-    font-size:1.1rem;
-    padding:10px;
-    background: rgb(80,80,80);
-    background: linear-gradient(0deg, rgba(80,80,80,1) 0%, rgba(103,103,103,1) 100%);
-    color:white;
-    margin-top:1rem;
-    margin:0.5rem;
+    font-size: 1.1rem;
+    padding: 10px;
+    background: rgb(80, 80, 80);
+    background: linear-gradient(
+        0deg,
+        rgba(80, 80, 80, 1) 0%,
+        rgba(103, 103, 103, 1) 100%
+    );
+    color: white;
+    margin-top: 1rem;
+    margin: 0.5rem;
 }
-.buttons:hover{
+.buttons:hover {
     cursor: pointer;
-    background: rgb(80,80,80);
-    background: linear-gradient(0deg, rgba(103,103,103,1) 0%, rgba(80,80,80,1) 100%);
-
-    
+    background: rgb(80, 80, 80);
+    background: linear-gradient(
+        0deg,
+        rgba(103, 103, 103, 1) 0%,
+        rgba(80, 80, 80, 1) 100%
+    );
 }
-.inner{
-    background-color: rgba(0, 0, 0, 0.7);
-    width:fit-content;
+.inner {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: fit-content;
     border-radius: 20px;
-    border:1px dashed rgba(103,103,103,1);
-    padding:1rem;
-    transition: background-color .4s;
-    max-width: 90%;
-
+    border: 1px dashed rgba(103, 103, 103, 1);
+    padding: 1rem;
+    transition: background-color 0.4s;
+    max-width: 80%;
 }

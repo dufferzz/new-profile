@@ -1,20 +1,19 @@
-
-.goToTop{
+.goToTop {
     position: fixed;
     text-align: center;
-    left:50%;
+    left: 50%;
     transform: translate(-50%, 0);
-    top:7%;
+    top: 7%;
     align-items: center;
     display: block;
-    background-color:rgba(200,200,200,0.8);
+    background-color: rgba(200, 200, 200, 0.8);
     border-radius: 100px;
-    padding:0.75rem;
+    padding: 0.75rem;
     font-weight: bold;
-    border:2px solid rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(0, 0, 0, 0.8);
     cursor: pointer;
     z-index: 1000000;
 }
-.goToTop:hover{
-    background-color:rgba(255,255,255,0.9);
+.goToTop:hover {
+    background-color: rgba(255, 255, 255, 0.9);
 }

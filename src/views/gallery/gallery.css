@@ -1,4 +1,3 @@
-
 .galleryPic {
     padding-top: 2rem;
     box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.2);
@@ -14,11 +13,9 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    transition: box-shadow .3s ease-out;
-    padding-bottom:2rem;
-
+    transition: box-shadow 0.3s ease-out;
+    padding-bottom: 2rem;
 }
-.galleryPic:hover{
-    box-shadow: inset 0 0 0 100vw rgba(138, 99, 99, 0.0);
-
+.galleryPic:hover {
+    box-shadow: inset 0 0 0 100vw rgba(138, 99, 99, 0);
 }
