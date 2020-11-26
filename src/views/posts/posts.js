@@ -4,9 +4,7 @@ import api from '../../_services/api'
 import Card from '../../components/card/card'
 import Error from '../../components/error/error'
 import Loading from '../../components/loading/loading'
-
-// Need to add bouncy bottom scrolling!
-// I know it isnt called that.. heh
+import NoMoreData from '../../components/noMoreData/noMoreData'
 
 export default class Posts extends Component {
     constructor(props) {
@@ -17,36 +15,60 @@ export default class Posts extends Component {
             isLoading: false,
             failed: false,
             errorMessage: null,
+            page: 1,
+            prevY: 0,
+            hasMoreData: true,
         }
     }
 
     getPosts = async () => {
-        const { src } = this.props
-        const imageLoader = new Image()
-
-        imageLoader.src = src
-        imageLoader.onload = () => {
-            this.setState({ src, isLoading: true, failed: false })
-        }
-
-        await api
-            .getPosts()
-            .then((posts) => {
-                this.setState({
-                    posts: posts.data,
-                    isLoading: false,
-                    failed: false,
-                    errorMessage: null,
+        if (this.state.hasMoreData === true) {
+            await api
+                .getPosts(this.state.page)
+                .then((posts) => {
+                    this.setState({
+                        posts: [...this.state.posts, ...posts.data.docs],
+                        isLoading: false,
+                        hasMoreData: posts.data.hasNextPage,
+                        failed: false,
+                        errorMessage: null,
+                        page: posts.data.page,
+                    })
                 })
-            })
-            .catch((err) => {
-                this.setState({ failed: true, errorMessage: err.message })
-                console.log(err.message)
-            })
+                .catch((err) => {
+                    this.setState({ failed: true, errorMessage: err.message })
+                    console.log(err.message)
+                })
+        } else {
+            this.setState({ hasMoreData: false })
+        }
     }
 
     componentDidMount = () => {
         this.getPosts()
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 1.0,
+        }
+
+        this.observer = new IntersectionObserver(
+            this.handleObserver.bind(this),
+            options
+        )
+        this.observer.observe(this.loadingRef)
+    }
+
+    handleObserver(entities, observer) {
+        if (this.state.hasMoreData === true) {
+            const y = entities[0].boundingClientRect.y
+            if (this.state.prevY > y) {
+                const nextpage = (this.state.page += 1)
+                this.getPosts(nextpage)
+                this.setState({ page: nextpage })
+            }
+            this.setState({ prevY: y })
+        }
     }
 
     render() {
@@ -73,6 +95,9 @@ export default class Posts extends Component {
                         subsubheading={post.date}
                     />
                 ))}
+                <div ref={(loadingRef) => (this.loadingRef = loadingRef)}></div>
+                <div>&nbsp;</div>
+                <NoMoreData show={this.state.hasMoreData} />
             </div>
         )
     }

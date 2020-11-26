@@ -22,11 +22,13 @@ export default function Sidebar() {
                 >
                     Strømmen, Akershus
                 </a>
-
-                <SidebarLink
-                    url="mailto://dufferz@dufferz.net"
-                    text="Dufferz@dufferz.net"
-                />
+                <a
+                    className="sidebar-text shadow"
+                    href="mailto://dufferz@dufferz.net"
+                    title="Send me an Email"
+                >
+                    Dufferz@dufferz.net
+                </a>
 
                 <hr style={{ width: 70 + '%' }}></hr>
                 <SidebarLink url="/" text="Home" />
@@ -46,17 +48,13 @@ export default function Sidebar() {
                     ></img>
                 </a>
 
-                <SidebarLink
-                    url="http://github.com/dufferzz/new-profile"
-                    text="View Source"
-                />
-            </div>
-
-            <div className="topnav" id="topNav">
-                <a href="/">Home</a>
-                <a href="/gallery">Gallery</a>
-                <a href="/posts">Posts</a>
-                <a href="/projects">Projects</a>
+                <a
+                    className="sidebar-text shadow"
+                    href="http://github.com/dufferzz/new-profile"
+                    title="View The Source for this site"
+                >
+                    View Source
+                </a>
             </div>
         </>
     )

@@ -3,7 +3,6 @@ import './contact.css'
 import ContactForm from '../../components/contactForm/contactForm'
 
 export default function Contact() {
-    const [] = useState(() => {})
     return (
         <div>
             <ContactForm />

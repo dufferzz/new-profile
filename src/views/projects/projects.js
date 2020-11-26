@@ -73,7 +73,10 @@ export default function Projects() {
                             applications which I am frequently using.
                         </h3>
 
-                        <div style={{ display: 'flex' }}>
+                        <div
+                            className="somePadding"
+                            style={{ display: 'flex' }}
+                        >
                             <div style={{ width: 50 + '%' }}>
                                 <h3>Languages</h3>
                                 <p>Javascript</p>

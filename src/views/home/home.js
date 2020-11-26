@@ -1,6 +1,7 @@
 import React from 'react'
 import workshop from '../../assets/images/000.webp'
 import tools from '../../assets/images/keys-workshop-mechanic-tools-162553.webp'
+import 'animate.css/animate.min.css'
 
 import server from '../../assets/images/server.webp'
 import carb from '../../assets/images/carb.webp'
@@ -12,7 +13,7 @@ import '../../components/card/card.css'
 export default function HomePage() {
     return (
         <>
-            <ScrollAnimation animateIn="fadeIn">
+            <ScrollAnimation animateOnce={true} offset={50} animateIn="fadeIn">
                 <Card
                     heading="Welcome To My Portfolio"
                     background={workshop}
@@ -23,7 +24,7 @@ export default function HomePage() {
                 />
             </ScrollAnimation>
 
-            <ScrollAnimation animateIn="fadeIn">
+            <ScrollAnimation animateOnce={true} offset={50} animateIn="fadeIn">
                 <div
                     className="image-box shadow somepadding"
                     style={{ backgroundImage: `url(${server})` }}
@@ -54,7 +55,7 @@ export default function HomePage() {
                 </div>
             </ScrollAnimation>
 
-            <ScrollAnimation animateIn="fadeIn">
+            <ScrollAnimation animateOnce={true} offset={50} animateIn="fadeIn">
                 <div
                     className="image-box shadow somepadding"
                     style={{ backgroundImage: `url(${tools})` }}
@@ -84,7 +85,7 @@ export default function HomePage() {
                     </div>
                 </div>
             </ScrollAnimation>
-            <ScrollAnimation animateIn="fadeIn">
+            <ScrollAnimation animateOnce={true} offset={50} animateIn="fadeIn">
                 <div
                     className="image-box shadow somepadding"
                     style={{ backgroundImage: `url(${carb})` }}

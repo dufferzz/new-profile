@@ -1,22 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.a9c26ae0.chunk.css",
-    "main.js": "/static/js/main.64f711c6.chunk.js",
-    "main.js.map": "/static/js/main.64f711c6.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.0ee1660d.js",
-    "runtime-main.js.map": "/static/js/runtime-main.0ee1660d.js.map",
-    "static/js/2.7c44813c.chunk.js": "/static/js/2.7c44813c.chunk.js",
-    "static/js/2.7c44813c.chunk.js.map": "/static/js/2.7c44813c.chunk.js.map",
-    "static/js/3.44f62ce4.chunk.js": "/static/js/3.44f62ce4.chunk.js",
-    "static/js/3.44f62ce4.chunk.js.map": "/static/js/3.44f62ce4.chunk.js.map",
+    "main.css": "/static/css/main.25b97921.chunk.css",
+    "main.js": "/static/js/main.41355d69.chunk.js",
+    "main.js.map": "/static/js/main.41355d69.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.bf65dbc3.js",
+    "runtime-main.js.map": "/static/js/runtime-main.bf65dbc3.js.map",
+    "static/css/2.cc77c331.chunk.css": "/static/css/2.cc77c331.chunk.css",
+    "static/js/2.0d66042f.chunk.js": "/static/js/2.0d66042f.chunk.js",
+    "static/js/2.0d66042f.chunk.js.map": "/static/js/2.0d66042f.chunk.js.map",
+    "static/js/3.72552412.chunk.js": "/static/js/3.72552412.chunk.js",
+    "static/js/3.72552412.chunk.js.map": "/static/js/3.72552412.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.a9c26ae0.chunk.css.map": "/static/css/main.a9c26ae0.chunk.css.map",
-    "static/js/2.7c44813c.chunk.js.LICENSE.txt": "/static/js/2.7c44813c.chunk.js.LICENSE.txt",
+    "static/css/2.cc77c331.chunk.css.map": "/static/css/2.cc77c331.chunk.css.map",
+    "static/css/main.25b97921.chunk.css.map": "/static/css/main.25b97921.chunk.css.map",
+    "static/js/2.0d66042f.chunk.js.LICENSE.txt": "/static/js/2.0d66042f.chunk.js.LICENSE.txt",
     "static/media/000.40435184.webp": "/static/media/000.40435184.webp",
     "static/media/Octocat.b45482fc.png": "/static/media/Octocat.b45482fc.png",
     "static/media/carb.1423ff03.webp": "/static/media/carb.1423ff03.webp",
+    "static/media/code.3289e19d.webp": "/static/media/code.3289e19d.webp",
     "static/media/concrete.5e250e3a.webp": "/static/media/concrete.5e250e3a.webp",
     "static/media/keys-workshop-mechanic-tools-162553.1d22108a.webp": "/static/media/keys-workshop-mechanic-tools-162553.1d22108a.webp",
+    "static/media/oil.6eea3d49.webp": "/static/media/oil.6eea3d49.webp",
     "static/media/profileimage.0b8c6b39.jpg": "/static/media/profileimage.0b8c6b39.jpg",
     "static/media/re_amot1.jpg": "/static/media/re_amot1.468cf7c7.jpg",
     "static/media/re_amot2.jpg": "/static/media/re_amot2.5e8cdffc.jpg",
@@ -32,9 +36,10 @@
     "static/media/sidebar.css": "/static/media/sidebar.2808b3f1.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0ee1660d.js",
-    "static/js/2.7c44813c.chunk.js",
-    "static/css/main.a9c26ae0.chunk.css",
-    "static/js/main.64f711c6.chunk.js"
+    "static/js/runtime-main.bf65dbc3.js",
+    "static/css/2.cc77c331.chunk.css",
+    "static/js/2.0d66042f.chunk.js",
+    "static/css/main.25b97921.chunk.css",
+    "static/js/main.41355d69.chunk.js"
   ]
 }
