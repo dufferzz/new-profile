@@ -1,22 +1,27 @@
 import React, { Component } from 'react'
 import './gallery.css'
-let listOfImages = []
 
 export default class Gallery extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      listOfImages: this.getImagesInFolder() 
+    }
+  }
     importAll(r) {
         return r.keys().map(r)
     }
-    componentWillMount() {
-        listOfImages = this.importAll(
+  getImagesInFolder(){
+    return this.importAll(
             require.context('./images/nature/', false, /\.(png|jpe?g|svg)$/)
         )
-        console.log(listOfImages[0].default)
-    }
+  }
     render() {
         return (
             <div>
-                {listOfImages.map((image, index) => (
-                    <div
+                {this.state.listOfImages.map((image, index) => (
+                  <div
+                        key={index}
                         className="galleryPic shadow somepadding"
                         style={{
                             backgroundImage: `url(${image.default})`,
