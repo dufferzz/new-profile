@@ -63,9 +63,8 @@ export default class Posts extends Component {
         if (this.state.hasMoreData === true) {
             const y = entities[0].boundingClientRect.y
             if (this.state.prevY > y) {
-                const nextpage = (this.state.page += 1)
-                this.getPosts(nextpage)
-                this.setState({ page: nextpage })
+                this.setState({page:this.state.page + 1})
+                this.getPosts(this.state.page)
             }
             this.setState({ prevY: y })
         }
