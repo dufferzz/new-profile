@@ -30,6 +30,7 @@ class Card extends Component {
                         <h3 className="shadow somepadding">
                             {this.props.subsubsubheading}
                         </h3>
+                        {this.props.children}
                     </div>
                 </div>
             </ScrollAnimation>

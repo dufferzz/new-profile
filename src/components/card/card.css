@@ -14,6 +14,7 @@
     text-align: center;
     transition: box-shadow 0.3s ease-out;
     padding-bottom: 2rem;
+    padding-top:2rem;
 }
 
 @media screen and (min-width: 700px) {

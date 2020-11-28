@@ -1,0 +1,14 @@
+.contactForm {
+    display: block;
+    color:white;
+    padding-top:2rem;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: var(--image-url) center center;
+    background-position-x: center;
+    background-position-y: center;
+    box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.7);
+
+    background-size: cover;
+}

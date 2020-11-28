@@ -8,7 +8,16 @@ import Contact from './views/contact/contact'
 import ScrollTop from './components/scrollTop/scrollTop.js'
 import ScrollToTop from './components/scrollTop/scrollTopRouter.js'
 import TopNav from './views/topNav/topNav'
+
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import {
+    faCheckSquare,
+    faCoffee,
+    faArrowUp,
+} from '@fortawesome/free-solid-svg-icons'
+import { library } from '@fortawesome/fontawesome-svg-core'
+
+library.add(faArrowUp, faCheckSquare, faCoffee)
 
 const App = () => {
     return (
