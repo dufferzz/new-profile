@@ -41,7 +41,10 @@ export default function Projects() {
                 subheading=" Below is a small list of languages, frameworks and
                 applications which I am frequently using."
             >
-                <div className="somePadding" style={{ display: 'flex' }}>
+                <div
+                    className="somePadding"
+                    style={{ display: 'flex', marginBottom: 1.5 + 'rem' }}
+                >
                     <div style={{ width: 50 + '%' }}>
                         <h3>Languages</h3>
                         <p>Javascript</p>
@@ -63,7 +66,6 @@ export default function Projects() {
                         <p></p>
                     </div>
                 </div>
-                <h3 className="somepadding"></h3>
 
                 <div style={{ display: 'flex' }}>
                     <div style={{ width: 50 + '%' }}>

@@ -72,20 +72,24 @@ export default class Posts extends Component {
     }
 
     render() {
-        const { posts, isLoading, failed } = this.state
-        if (failed) {
-            return (
-                <Error
-                    message="Failed to load posts.."
-                    error={this.state.errorMessage}
-                />
-            )
-        }
-        if (isLoading) {
-            return <Loading />
-        }
+        const {
+            posts,
+            isLoading,
+            failed,
+            hasMoreData,
+            errorMessage,
+        } = this.state
         return (
             <div>
+                {failed && (
+                    <Error
+                        message="Failed to load posts.."
+                        error={errorMessage}
+                    />
+                )}
+
+                {isLoading && <Loading />}
+
                 {posts.map((post) => (
                     <Card
                         key={post._id}
@@ -95,9 +99,22 @@ export default class Posts extends Component {
                         subsubheading={post.date}
                     />
                 ))}
+
                 <div ref={(loadingRef) => (this.loadingRef = loadingRef)}></div>
-                <div>&nbsp;</div>
-                <NoMoreData show={this.state.hasMoreData} />
+                {!hasMoreData ? (
+                    <NoMoreData />
+                ) : (
+                    <h1
+                        style={{
+                            width: 100 + '%',
+                            textAlign: 'center',
+                            color: 'white',
+                            fontSize: 1.2 + 'rem',
+                        }}
+                    >
+                        Loading...&nbsp;
+                    </h1>
+                )}
             </div>
         )
     }

@@ -6,10 +6,10 @@ class Card extends Component {
     render() {
         return (
             <ScrollAnimation
-                duration="1"
+                duration={1}
                 animateIn="fadeIn"
-                animateOnce="true"
-                offset="75"
+                animateOnce={true}
+                offset={75}
             >
                 <div
                     className="image-box"

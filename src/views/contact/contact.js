@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './contact.css'
 import ContactForm from '../../components/contactForm/contactForm'
 import oil from '../../assets/images/oil.webp'

@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import workshop from '../../assets/images/000.webp'
 import tools from '../../assets/images/keys-workshop-mechanic-tools-162553.webp'

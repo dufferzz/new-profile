@@ -1,13 +1,7 @@
 import React, { Component } from 'react'
 import './contactForm.css'
-import { css } from '@emotion/react'
 import { useForm } from 'react-hook-form'
 
-const override = css`
-    display: block;
-    margin: 0 auto;
-    border-color: red;
-`
 export default class ContactForm extends Component {
     constructor(props) {
         super(props)
@@ -27,7 +21,7 @@ export default class ContactForm extends Component {
                 // await axios post dfz api profile/contact, return success message / error
                 // .then setstate successfulSubmit true on success
                 // else showerror from api / nodemailer
-                //cantsend = true;
+                // cantsend = true;
 
                 console.log(data)
                 //
